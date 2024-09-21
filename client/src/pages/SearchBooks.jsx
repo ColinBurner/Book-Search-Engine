@@ -3,7 +3,6 @@ import { Container, Col, Form, Button, Card, Row } from 'react-bootstrap';
 
 import Auth from '../utils/auth';
 import { SAVE_BOOK } from '../utils/mutations';
-import { searchGoogleBooks } from '../utils/API';
 import { getSavedBookIds } from '../utils/localStorage';
 import { useMutation } from '@apollo/client';
 
@@ -28,14 +27,16 @@ const SearchBooks = () => {
     }
 
     try {
-      const response = await searchGoogleBooks(searchInput);
+      // Fetch data from Google Books API directly
+      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchInput}`);
 
       if (!response.ok) {
-        throw new Error('something went wrong!');
+        throw new Error('Something went wrong!');
       }
 
       const { items } = await response.json();
 
+      // Process the response to get the necessary book data
       const bookData = items.map((book) => ({
         bookId: book.id,
         authors: book.volumeInfo.authors || ['No author to display'],
@@ -45,6 +46,7 @@ const SearchBooks = () => {
         link: book.volumeInfo.infoLink,
       }));
 
+      // Set the searched books into the state
       setSearchedBooks(bookData);
       setSearchInput('');
     } catch (err) {
