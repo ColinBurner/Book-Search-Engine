@@ -54,7 +54,7 @@ N/A
 
 ## Usage
 
-Search for a book! Any book you can think of, type it in the search bar and click submit search button. This will display all results for your input. Click login/sign up in the navbar to sign up for an account so that the application will remember your saved books.
+Search for a book! Any book you can think of, type it in the search bar and click submit search button. This will display all results for your input. Click login/sign up in the navbar to sign up for an account so that the application will remember your saved books. Once you have created an account, try another search for books you like and click the save this book! button. When you do, you'll see the button changed to say "This book has already been saved." Now you can go to the navbar in the top right and click "See Your Books" to see your saved books. On this page you can delete saved books.
 
 ## Visuals
 
