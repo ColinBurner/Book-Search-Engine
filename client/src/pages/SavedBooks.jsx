@@ -3,7 +3,7 @@ import { Container, Card, Button, Row, Col } from 'react-bootstrap';
 
 import { GET_ME } from '../utils/queries';
 import { REMOVE_BOOK } from '../utils/mutations';
-import { removeBookId } from '../utils/mutations';
+import { removeBookId } from '../utils/localStorage';
 
 const SavedBooks = () => {
   // Fetch user data using Apollo Client's useQuery
