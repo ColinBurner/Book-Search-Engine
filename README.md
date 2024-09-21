@@ -6,40 +6,9 @@ This is a book search engine! You are able to search for books, save books to yo
 
 This application was refactored to use a GraphQL API instead of a RESTful API.
 
-> User Story:
-
-> GIVEN a book search engine
-> WHEN I load the search engine
-> THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-> WHEN I click on the Search for Books menu option
-> THEN I am presented with an input field to search for books and a submit button
-> WHEN I am not logged in and enter a search term in the input field and click the submit button
-> THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
-> WHEN I click on the Login/Signup menu option
-> THEN a modal appears on the screen with a toggle between the option to log in or sign up
-> WHEN the toggle is set to Signup
-> THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
-> WHEN the toggle is set to Login
-> THEN I am presented with two inputs for an email address and a password and login button
-> WHEN I enter a valid email address and create a password and click on the signup button
-> THEN my user account is created and I am logged in to the site
-> WHEN I enter my account’s email address and password and click on the login button
-> THEN I the modal closes and I am logged in to the site
-> WHEN I am logged in to the site
-> THEN the menu options change to Search for Books, an option to see my saved books, and Logout
-> WHEN I am logged in and enter a search term in the input field and click the submit button
-> THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
-> WHEN I click on the Save button on a book
-> THEN that book’s information is saved to my account
-> WHEN I click on the option to see my saved books
-> THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
-> WHEN I click on the Remove button on a book
-> THEN that book is deleted from my saved books list
-> WHEN I click on the Logout button
-> THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
-
 ## Table of Contents
 
+- [User Story](#user-story)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -47,6 +16,102 @@ This application was refactored to use a GraphQL API instead of a RESTful API.
 - [Visuals](#visuals)
 - [Roadmap](#roadmap)
 - [Questions](#questions)
+
+
+## User Story
+
+### GIVEN a book search engine
+- **WHEN** I load the search engine
+  - **THEN** I am presented with a menu with the options:
+    - Search for Books
+    - Login/Signup
+    - An input field to search for books
+    - A submit button
+
+- **WHEN** I click on the "Search for Books" menu option
+  - **THEN** I am presented with:
+    - An input field to search for books
+    - A submit button
+
+- **WHEN** I am not logged in and enter a search term in the input field and click the submit button
+  - **THEN** I am presented with several search results, each featuring:
+    - Book’s title
+    - Author
+    - Description
+    - Image
+    - A link to that book on the Google Books site
+
+- **WHEN** I click on the "Login/Signup" menu option
+  - **THEN** a modal appears on the screen with a toggle between:
+    - Login
+    - Signup
+
+#### Signup Flow:
+- **WHEN** the toggle is set to "Signup"
+  - **THEN** I am presented with:
+    - Three inputs for:
+      - Username
+      - Email address
+      - Password
+    - A "Signup" button
+
+#### Login Flow:
+- **WHEN** the toggle is set to "Login"
+  - **THEN** I am presented with:
+    - Two inputs for:
+      - Email address
+      - Password
+    - A "Login" button
+
+#### Account Creation:
+- **WHEN** I enter a valid email address and create a password and click on the "Signup" button
+  - **THEN** my user account is created and I am logged into the site
+
+#### Login:
+- **WHEN** I enter my account’s email address and password and click on the "Login" button
+  - **THEN** the modal closes and I am logged into the site
+
+#### Logged-in State:
+- **WHEN** I am logged in to the site
+  - **THEN** the menu options change to:
+    - Search for Books
+    - See Saved Books
+    - Logout
+
+- **WHEN** I am logged in and enter a search term in the input field and click the submit button
+  - **THEN** I am presented with several search results, each featuring:
+    - Book’s title
+    - Author
+    - Description
+    - Image
+    - A link to that book on the Google Books site
+    - A button to save a book to my account
+
+#### Saving a Book:
+- **WHEN** I click on the "Save" button on a book
+  - **THEN** that book’s information is saved to my account
+
+#### Viewing Saved Books:
+- **WHEN** I click on the option to see my saved books
+  - **THEN** I am presented with all of the books I have saved to my account, each featuring:
+    - Book’s title
+    - Author
+    - Description
+    - Image
+    - A link to that book on the Google Books site
+    - A button to remove a book from my account
+
+#### Removing a Book:
+- **WHEN** I click on the "Remove" button on a book
+  - **THEN** that book is deleted from my saved books list
+
+#### Logout:
+- **WHEN** I click on the "Logout" button
+  - **THEN** I am logged out of the site and presented with the original menu:
+    - Search for Books
+    - Login/Signup
+    - Input field to search for books
+    - Submit button
 
 ## Installation
 
